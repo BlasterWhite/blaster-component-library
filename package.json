@@ -1,0 +1,46 @@
+{
+  "name": "blaster-ui",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "files": ["dist"],
+  "main": "./dist/brian-component-lib.umd.cjs",
+  "module": "./dist/brian-component-lib.js",
+  "exports": {
+    ".": {
+      "import": "./dist/blaster-component-library.es.js",
+      "require": "./dist/blaster-component-library.umd.js"
+    },
+    "./style.css": "./dist/style.css"
+  },
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "dev": "vite",
+    "preview": "vite preview",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "build": "vite build && vue-tsc --emitDeclarationOnly",
+    "types": "vue-tsc "
+  },
+  "dependencies": {
+    "vue": "^3.4.37"
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "^1.6.1",
+    "@storybook/addon-essentials": "^8.2.9",
+    "@storybook/addon-interactions": "^8.2.9",
+    "@storybook/addon-links": "^8.2.9",
+    "@storybook/addon-onboarding": "^8.2.9",
+    "@storybook/blocks": "^8.2.9",
+    "@storybook/test": "^8.2.9",
+    "@storybook/vue3": "^8.2.9",
+    "@storybook/vue3-vite": "^8.2.9",
+    "@vitejs/plugin-vue": "^5.1.2",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.41",
+    "storybook": "^8.2.9",
+    "tailwindcss": "^3.4.10",
+    "vite": "^5.4.1",
+    "vue-tsc": "^2.0.29"
+  }
+}
