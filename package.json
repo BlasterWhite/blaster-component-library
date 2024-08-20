@@ -1,6 +1,7 @@
 {
   "name": "blaster-ui",
   "private": false,
+  "url": "https://github.com/BlasterWhite/blaster-component-library",
   "version": "0.0.0",
   "type": "module",
   "files": ["dist"],
