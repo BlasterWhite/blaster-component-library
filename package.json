@@ -5,7 +5,7 @@
     "url": "https://github.com/BlasterWhite/blaster-component-library",
     "type": "git"
   },
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "files": ["dist"],
   "main": "./dist/brian-component-lib.umd.cjs",
