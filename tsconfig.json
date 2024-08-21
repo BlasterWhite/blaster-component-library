@@ -6,6 +6,7 @@
   ],
   "compilerOptions": {
     "outDir": "dist",
-    "declaration": true
-  }
+    "declaration": true, // Générer les fichiers de déclaration de type (.d.ts)
+    "emitDeclarationOnly": true // Ne pas émettre de code JavaScript, juste les déclarations de type
+  },
 }

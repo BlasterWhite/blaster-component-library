@@ -1,21 +1,22 @@
 <template>
-  <button @click="increment">{{ count }}</button>
+  <button class="my-button" @click="increment" :style="{background: config.primaryColor}">→ {{ count }} ←</button>
 </template>
 
-<script setup>
-import { ref } from 'vue'
+<script lang="ts" setup>
+import { Config } from '../types.js'
+import {inject, ref} from 'vue'
 
-const count = ref(0)
+const count = ref(0);
 const increment = () => {
   count.value++
 }
+const config: Config =  inject('config');
 </script>
 
-<style scoped>
-button {
+<style>
+button.my-button {
   padding: 8px 16px;
-  background-color: #3490dc;
   color: white;
-  border-radius: 4px;
+  border-radius: 16px;
 }
 </style>

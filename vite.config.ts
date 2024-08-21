@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [vue()],
   build: {
     lib: {
-      entry: 'src/main.ts',
+      entry: 'src/index.ts',
       name: 'BlasterComponentLibrary',
       fileName: (format) => `blaster-component-library.${format}.js`
     },
